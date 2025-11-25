@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springSecurity1" />
+        <module name="QuizService" />
+        <module name="ServiceRegistry" />
+        <module name="CollectionsDemo" />
+        <module name="QuestionService" />
+        <module name="ApiGateway" />
+      </profile>
+      <profile name="Annotation profile for FrontendAndBackend" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="FrontendAndBackend" />
+      </profile>
+      <profile name="Annotation profile for Advanced Authentication System" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="advanced-auth-system" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
+      <module name="FrontendAndBackend" options="-parameters" />
+      <module name="QuestionService" options="-parameters" />
+      <module name="QuizService" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
+      <module name="advanced-auth-system" options="-parameters" />
+      <module name="springSecurity1" options="-parameters" />
+    </option>
+  </component>
+</project>
