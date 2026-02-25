@@ -1,6 +1,5 @@
 package com.practice.arrays;
 
-import java.util.Arrays;
 
 public class SubArrays {
     public static void main(String[] args) {
